@@ -16,6 +16,20 @@ const App = () => {
                 <Route exact path="/projects">
                     {() => <h1>Projects Page</h1>}
                 </Route>
+                
+                <Route exact path="/users">
+                    {() => <h1>Users Page</h1>}
+                </Route>
+                
+                <Route exact path="/users/:userid">
+                    {() => <h1>User Detail Page</h1>}
+                </Route>
+                
+                <Route path="*">
+                    {() => <h1>404 - Page Not Found</h1>}
+                </Route>
+
+
             </Switch>
         </BrowserRouter>
     );
