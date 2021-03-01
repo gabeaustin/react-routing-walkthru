@@ -6,7 +6,15 @@ const App = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
+                    {() => <h1>Home Page</h1>}
+                </Route>
 
+                <Route exact path="/about">
+                    {() => <h1>About Page</h1>}
+                </Route>
+                
+                <Route exact path="/projects">
+                    {() => <h1>Projects Page</h1>}
                 </Route>
             </Switch>
         </BrowserRouter>
