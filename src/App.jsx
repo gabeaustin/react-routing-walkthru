@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Users from "./pages/Users";
-
+import UserDetails from "./pages/UserDetails";
 
 const App = () => {
     return (
@@ -28,7 +28,7 @@ const App = () => {
                 </Route>
                 
                 <Route exact path="/users/:userid">
-                    {() => <h1>User Detail Page</h1>}
+                    <UserDetails />
                 </Route>
                 
                 <Route path="*">
