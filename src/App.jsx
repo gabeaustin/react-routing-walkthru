@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 const App = () => {
     return (
@@ -12,7 +13,7 @@ const App = () => {
                 </Route>
 
                 <Route exact path="/about">
-                    {() => <h1>About Page</h1>}
+                    <About />
                 </Route>
                 
                 <Route exact path="/projects">
