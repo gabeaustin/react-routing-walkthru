@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Users from "./pages/Users";
 
 
 const App = () => {
@@ -23,7 +24,7 @@ const App = () => {
                 </Route>
                 
                 <Route exact path="/users">
-                    {() => <h1>Users Page</h1>}
+                    <Users />
                 </Route>
                 
                 <Route exact path="/users/:userid">
