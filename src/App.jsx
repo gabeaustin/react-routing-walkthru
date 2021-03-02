@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
+
 
 const App = () => {
     return (
@@ -17,7 +19,7 @@ const App = () => {
                 </Route>
                 
                 <Route exact path="/projects">
-                    {() => <h1>Projects Page</h1>}
+                    <Projects />
                 </Route>
                 
                 <Route exact path="/users">
